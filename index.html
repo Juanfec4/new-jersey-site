@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./scrtips/imageLoad.js" defer></script>
+    <script src="./scrtips/form.js" defer></script>
+    <title id="title">New Jersey</title>
+  </head>
+  <body onload="setBg('./assets/images/new-jersey-patterson.jpg')">
+    <div id="root">
+      <div class="hero" id="hero-image">
+        <div class="hero__content-container">
+          <!-- Header -->
+          <header class="header">
+            <img
+              src="./assets/images/new-jersey-seal.svg"
+              alt="New Jersey Seal"
+              class="header__logo"
+            />
+            <h3 class="header__tagline">Liberty and Prosperity</h3>
+          </header>
+          <!-- Nav -->
+          <nav id="site-nav" class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="./index.html" id="active-link" class="nav__link">New Jersey</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./pages/city/trenton.html" class="nav__link">Trenton</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./pages/city/atlantic-city.html" class="nav__link">Atlantic City</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./pages/city/newark.html" class="nav__link">Newark</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Hero message -->
+        <div class="hero__message-container">
+          <h2 class="hero__message">New Jersey</h2>
+        </div>
+      </div>
+      <!-- Main -->
+      <div id="content">
+        <main id="main-content">
+          <section class="section" id="welcome-section">
+            <h2 class="section__title">Welcome to New Jersey</h2>
+            <p class="section__text">
+              <img
+                src="https://cdn.britannica.com/99/2999-050-43E57A0F/state-flag-New-Jersey-George-Washington-field-1779.jpg"
+                alt="New Jersey state flag"
+                class="float-image"
+              />
+              Located in the northeastern part of the United States, New Jersey offers a mix of
+              beautiful beaches along the Atlantic Ocean and charming countryside. Home to landmarks
+              like Ellis Island and Newark's cityscape, the state is rich in history and diverse
+              cultures. From the lively atmosphere of Atlantic City to the peacefulness of historic
+              sites like Princeton, New Jersey invites visitors to enjoy a blend of nature and
+              culture, making it a compelling destination for a memorable experience. For more
+              information visit
+              <a href="https://visitnj.org/" target="_blank">this travel guide</a>.
+            </p>
+          </section>
+          <section class="section" id="state-symbols">
+            <h2 class="section__title">State Symbols</h2>
+
+            <table class="table">
+              <thead class="table__head">
+                <tr class="table__row">
+                  <th class="table__heading">Symbol</th>
+                  <th class="table__heading">Name</th>
+                  <th class="table__heading">Image</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__cell">Bird</td>
+                  <td class="table__cell">Eastern Goldfinch</td>
+                  <td class="table__cell">
+                    <img
+                      class="table__image"
+                      src="./assets/images/eastern-goldfinch.jpg"
+                      alt="Image of Eastern Goldfinch"
+                    />
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Flower</td>
+                  <td class="table__cell">Common Meadow Violet</td>
+                  <td class="table__cell">
+                    <img
+                      class="table__image"
+                      src="./assets/images/common-meadow-violet.jpg"
+                      alt="Image of Common Meadow Violet"
+                    />
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Mammal</td>
+                  <td class="table__cell">Horse</td>
+                  <td class="table__cell">
+                    <img
+                      class="table__image"
+                      src="./assets/images/horse.jpg"
+                      alt="Image of Horse"
+                    />
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Mineral</td>
+                  <td class="table__cell">Franklinite</td>
+                  <td class="table__cell">
+                    <img
+                      class="table__image"
+                      src="./assets/images/franklinite.jpg"
+                      alt="Image of Franklinite"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+        <!-- aside -->
+        <aside id="aside-content" class="aside">
+          <div class="aside__section">
+            <h4 class="aside__title">Map</h4>
+            <div class="aside__map">
+              <iframe
+                width="100%"
+                height="200"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=new-jersey+(My%20Business%20Name)&amp;t=p&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
+          <div class="aside__section">
+            <h4 class="aside__title">Fun facts</h4>
+            <div class="facts">
+              <ol class="facts__list">
+                <li class="facts__list-item">
+                  <p class="facts__text">
+                    <mark class="bold">First Boardwalk</mark> The world's first boardwalk was built
+                    in Atlantic City in 1870, marking the beginning of a popular seaside tradition
+                    that has spread to many coastal destinations.
+                  </p>
+                </li>
+                <li class="facts__list-item">
+                  <p class="facts__text">
+                    <mark class="bold">Historical Innovation Hub</mark> Thomas Edison's laboratory,
+                    where he invented the phonograph and the first practical electric light bulb, is
+                    located in Menlo Park, New Jersey.
+                  </p>
+                </li>
+                <li class="facts__list-item">
+                  <p class="facts__text">
+                    <mark class="bold">Diner Capital</mark> New Jersey is often referred to as the
+                    "Diner Capital of the World," boasting a high concentration of diners serving a
+                    variety of delicious comfort foods 24/7.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <button class="footer-menu__button" onclick="openForm('../form/formTemplate.html')">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

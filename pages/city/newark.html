@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../index.css" />
+    <script src="../../scrtips/imageLoad.js" defer></script>
+    <script src="../../scrtips/form.js" defer></script>
+    <title id="title">Newark</title>
+  </head>
+  <body onload="setBg('../../assets/images/newark-city.webp')">
+    <div id="root">
+      <div class="hero" id="hero-image">
+        <div class="hero__content-container">
+          <!-- Header -->
+          <header class="header">
+            <img
+              src="../../assets/../assets/images/new-jersey-seal.svg"
+              alt="New Jersey State Seal"
+              class="header__logo"
+            />
+            <h3 class="header__tagline">Liberty and Prosperity</h3>
+          </header>
+          <!-- Nav -->
+          <nav id="site-nav" class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="../../index.html" class="nav__link">New Jersey</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./trenton.html" class="nav__link">Trenton</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./atlantic-city.html" class="nav__link">Atlantic City</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./newark.html" class="nav__link" id="active-link">Newark</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Hero message -->
+        <div class="hero__message-container">
+          <h2 class="hero__message">Newark</h2>
+        </div>
+      </div>
+      <!-- main -->
+      <div id="content">
+        <main id="main-content">
+          <section class="section" id="welcome-section">
+            <h2 class="section__title">About Newark</h2>
+            <p class="section__text">
+              Newark, New Jersey, a vibrant city with a rich history, stands as the state's largest
+              metropolis and a cultural hub. Renowned for its diverse communities, iconic landmarks,
+              and economic significance, Newark offers a dynamic urban experience at the heart of
+              the Garden State.
+            </p>
+          </section>
+          <section class="section" id="image-section">
+            <div class="image-gallery">
+              <div class="image-gallery__item">
+                <img src="../../assets/images/newark-flag.png" alt="Newark flag" />
+              </div>
+              <div class="image-gallery__item">
+                <img src="../../assets/images/newark-visit-1.jpg" alt="Newark skyline day" />
+              </div>
+              <div class="image-gallery__item">
+                <img src="../../assets/images/newark-visit-2.jpg" alt="Newark skyline night" />
+              </div>
+            </div>
+          </section>
+          <section class="section" id="stats-section">
+            <h2 class="section__title">City Stats</h2>
+            <ul class="city-facts__list">
+              <li class="city-facts__list-item">
+                <p class="section__text"><mark class="bold">Population:</mark> 305,344</p>
+              </li>
+              <li class="city-facts__list-item">
+                <p class="section__text">
+                  <mark class="bold"> Incorporated in:</mark> April 11, 1836
+                </p>
+              </li>
+              <li class="city-facts__list-item">
+                <p class="section__text">
+                  <mark class="bold">Region:</mark> Gateway Region (Northeastern Jersey)
+                </p>
+              </li>
+              <li class="city-facts__list-item">
+                <p class="section__text"><mark class="bold">City classification:</mark> Urban</p>
+              </li>
+              <li class="city-facts__list-item">
+                <p class="section__text">
+                  <mark class="bold">Median household income:</mark> $46,460
+                </p>
+              </li>
+              <li class="city-facts__list-item">
+                <p class="section__text">
+                  <mark class="bold">Median household income (state):</mark> $97,126
+                </p>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <!-- aside -->
+        <aside id="aside-content" class="aside">
+          <div class="aside__section">
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/en/40d74n74d17/newark/?unit=us"
+              data-label_1="NEWARK"
+              data-label_2="WEATHER"
+              data-font="Roboto"
+              data-icons="Climacons Animated"
+              data-days="5"
+              data-theme="pure"
+              >NEWARK WEATHER</a
+            >
+            <script>
+              !(function (d, s, id) {
+                var js,
+                  fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "https://weatherwidget.io/js/widget.min.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              })(document, "script", "weatherwidget-io-js");
+            </script>
+          </div>
+        </aside>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <button class="footer-menu__button" onclick="openForm('../../form/formTemplate.html')">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

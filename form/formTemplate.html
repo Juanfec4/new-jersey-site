@@ -1,0 +1,50 @@
+<form class="form">
+  <button class="form__exit-button" onclick="toggleForm()">X</button>
+  <div class="form__content">
+    <h3 class="form__title">Contact Us</h3>
+    <div class="form__section">
+      <label for="first-name-input" class="form__label">First name</label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name-input"
+        class="form__input"
+        placeholder="John"
+      />
+      <label for="last-name-input" class="form__label">Last name</label>
+      <input
+        type="text"
+        name="last-name"
+        id="last-name-input"
+        class="form__input"
+        placeholder="Smith"
+      />
+      <label for="email-input" class="form__label">Email</label>
+      <input
+        type="text"
+        name="email"
+        id="email-input"
+        class="form__input"
+        placeholder="email@123.com"
+      />
+      <label for="email-confirmation-input" class="form__label">Email confirmation</label>
+      <input
+        type="text"
+        name="email-confirmation"
+        id="email-confirmation-input"
+        class="form__input"
+        placeholder="email@123.com"
+        oninput="validateEmailConfirmation()"
+      />
+      <label for="question-box" class="form__label">Questions</label>
+      <textarea
+        name="question-box"
+        id="question-box"
+        class="form__text-area"
+        placeholder="Type your question"
+      ></textarea>
+      <label id="email-confirmation-error" class="form__error"></label>
+      <button class="form__submit-button" onclick="handleSubmitForm()">Submit</button>
+    </div>
+  </div>
+</form>
